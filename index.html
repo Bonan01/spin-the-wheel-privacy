@@ -16,7 +16,7 @@
       --border: rgba(124,106,247,0.18);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     body {
       background: var(--bg);
       color: var(--text);
@@ -24,23 +24,13 @@
       line-height: 1.75;
       padding: 0 16px 64px;
     }
-
-    /* Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
     header {
       max-width: 760px;
       margin: 0 auto;
       padding: 56px 0 32px;
       text-align: center;
     }
-
-    .logo {
-      font-size: 52px;
-      margin-bottom: 16px;
-      filter: drop-shadow(0 0 24px rgba(124,106,247,0.6));
-    }
-
+    .logo { font-size: 52px; margin-bottom: 16px; filter: drop-shadow(0 0 24px rgba(124,106,247,0.6)); }
     h1 {
       font-size: clamp(1.6rem, 4vw, 2.4rem);
       font-weight: 700;
@@ -50,12 +40,7 @@
       background-clip: text;
       margin-bottom: 8px;
     }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
+    .subtitle { color: var(--muted); font-size: 0.95rem; }
     .badge {
       display: inline-block;
       margin-top: 12px;
@@ -66,12 +51,7 @@
       font-size: 0.8rem;
       color: var(--accent2);
     }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-    }
-
+    main { max-width: 760px; margin: 0 auto; }
     section {
       background: var(--card);
       border: 1px solid var(--border);
@@ -81,7 +61,6 @@
       transition: border-color 0.2s;
     }
     section:hover { border-color: rgba(124,106,247,0.38); }
-
     h2 {
       font-size: 1.05rem;
       font-weight: 600;
@@ -91,61 +70,23 @@
       align-items: center;
       gap: 8px;
     }
-
     p { color: var(--text); margin-bottom: 8px; font-size: 0.95rem; }
     p:last-child { margin-bottom: 0; }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    ul li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    ul li::before {
-      content: '✓';
-      color: #4ade80;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
+    ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+    ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text); }
+    ul li::before { content: '✓'; color: #4ade80; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
     .highlight {
-      background: rgba(74, 222, 128, 0.08);
-      border: 1px solid rgba(74, 222, 128, 0.2);
+      background: rgba(74,222,128,0.08);
+      border: 1px solid rgba(74,222,128,0.2);
       border-radius: 12px;
       padding: 16px 20px;
       margin-bottom: 16px;
     }
-
-    .highlight p {
-      color: #86efac;
-      font-weight: 500;
-    }
-
+    .highlight p { color: #86efac; font-weight: 500; }
     a { color: var(--accent2); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    footer {
-      max-width: 760px;
-      margin: 32px auto 0;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-
-    @media (max-width: 480px) {
-      section { padding: 20px 18px; }
-    }
+    footer { max-width: 760px; margin: 32px auto 0; text-align: center; color: var(--muted); font-size: 0.8rem; }
+    @media (max-width: 480px) { section { padding: 20px 18px; } }
   </style>
 </head>
 <body>
@@ -154,13 +95,13 @@
   <div class="logo">🎡</div>
   <h1>Privacy Policy</h1>
   <p class="subtitle">Spin the Wheel — Random Decision Maker</p>
-  <span class="badge">Last updated: July 15, 2025</span>
+  <span class="badge">Last updated: July 17, 2025</span>
 </header>
 
 <main>
 
   <div class="highlight">
-    <p>🔒 Short version: Spin the Wheel does not collect, store, or share any personal data. Everything stays on your device.</p>
+    <p>🔒 Short version: Spin the Wheel stores all your data locally on your device. We use Firebase Analytics to understand how the app is used — no personal information is collected.</p>
   </div>
 
   <section>
@@ -177,14 +118,54 @@
 
   <section>
     <h2>📦 Data We Collect</h2>
-    <p>We collect <strong>no personal data whatsoever</strong>. Specifically:</p>
+    <p>We do <strong>not</strong> collect any personally identifiable information. Specifically, we never collect:</p>
     <ul>
-      <li>No name, email address, or account information</li>
-      <li>No location data</li>
-      <li>No device identifiers or advertising IDs</li>
-      <li>No usage analytics or crash reports sent to external servers</li>
-      <li>No cookies or tracking technologies</li>
+      <li>Your name, email address, or account information</li>
+      <li>Location data</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>The content of your wheels or spin results</li>
+      <li>Cookies or tracking technologies beyond what Firebase uses</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>📊 Analytics (Firebase)</h2>
+    <p>
+      We use <strong>Firebase Analytics</strong> (by Google) to understand how users interact with the app in aggregate.
+      This helps us improve the experience for everyone.
+    </p>
+    <p>We collect <em>anonymous</em> usage events such as:</p>
+    <ul>
+      <li>When a wheel is spun (number of sectors, spin duration)</li>
+      <li>When a result is shared</li>
+      <li>When a theme is changed</li>
+      <li>When a new wheel is created or edited</li>
+      <li>App session information (screen views, session duration)</li>
+    </ul>
+    <p>
+      <strong>None of these events contain personal information</strong> — we only log counts and settings, never the text content of your wheels.
+      Firebase Analytics data is processed by Google and subject to
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+      You can opt out of Firebase Analytics collection at any time in your device settings:
+      <em>Settings → Google → Ads → Opt out of Ads Personalization</em>.
+    </p>
+  </section>
+
+  <section>
+    <h2>🐛 Crash Reporting (Firebase Crashlytics)</h2>
+    <p>
+      We use <strong>Firebase Crashlytics</strong> to automatically detect and report app crashes.
+      Crash reports may include:
+    </p>
+    <ul>
+      <li>Device model, OS version, and app version</li>
+      <li>Stack trace of the crash (code location)</li>
+      <li>Time of crash</li>
+    </ul>
+    <p>
+      Crash reports do <strong>not</strong> include any content from your wheels or personal information.
+      This data is used exclusively for fixing bugs and improving stability.
+    </p>
   </section>
 
   <section>
@@ -197,8 +178,8 @@
     </ul>
     <p>
       This data is stored using Android's standard local storage (Room database and DataStore)
-      and is removed when you uninstall the app. You can also clear it manually at any time
-      through your device's App Settings → Clear Data.
+      and is removed when you uninstall the app. You can clear it manually at any time through
+      your device's <em>App Settings → Clear Data</em>.
     </p>
   </section>
 
@@ -206,18 +187,9 @@
     <h2>🌐 Internet &amp; Permissions</h2>
     <p>Spin the Wheel uses the following Android permissions:</p>
     <ul>
+      <li><strong>INTERNET</strong> — required by Firebase Analytics and Crashlytics to send anonymous usage and crash data.</li>
       <li><strong>VIBRATE</strong> — for haptic feedback when the wheel stops. No data is transmitted.</li>
     </ul>
-    <p>
-      The app does <strong>not</strong> require INTERNET permission and makes
-      <strong>no network connections</strong> of any kind. All functionality is fully offline.
-    </p>
-    <p>
-      Note: On some devices, fonts may be downloaded from Google Fonts the first time
-      the app opens if they are not already cached by the Android system.
-      This is handled by the OS and is subject to
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
-    </p>
   </section>
 
   <section>
@@ -225,16 +197,18 @@
     <p>
       Spin the Wheel is suitable for all ages. We do not knowingly collect personal data
       from children under 13 (or the applicable age in your jurisdiction).
-      Since we collect no personal data at all, this policy applies equally to all users.
+      Firebase Analytics is configured to not collect advertising identifiers.
     </p>
   </section>
 
   <section>
     <h2>🔄 Third-Party Services</h2>
-    <p>
-      Spin the Wheel does not integrate any third-party analytics, advertising SDKs,
-      social login, or data-sharing services. There are no in-app purchases in the current version.
-    </p>
+    <p>The app uses the following third-party services:</p>
+    <ul>
+      <li><strong>Firebase Analytics</strong> — anonymous usage analytics by Google</li>
+      <li><strong>Firebase Crashlytics</strong> — crash reporting by Google</li>
+    </ul>
+    <p>There are no advertising SDKs, social login services, or in-app purchases in the current version.</p>
   </section>
 
   <section>
@@ -249,8 +223,7 @@
   <section>
     <h2>📬 Contact Us</h2>
     <p>
-      If you have any questions or concerns about this Privacy Policy,
-      please contact us at:<br />
+      If you have any questions or concerns about this Privacy Policy, please contact us at:<br />
       <a href="mailto:privacy@spinthewheel.app">privacy@spinthewheel.app</a>
     </p>
     <p>
