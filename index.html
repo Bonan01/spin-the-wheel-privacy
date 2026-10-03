@@ -16,7 +16,6 @@
       --border: rgba(124,106,247,0.18);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     body {
       background: var(--bg);
       color: var(--text);
@@ -95,147 +94,89 @@
   <div class="logo">🎡</div>
   <h1>Privacy Policy</h1>
   <p class="subtitle">Spin the Wheel — Random Decision Maker</p>
-  <span class="badge">Last updated: July 17, 2025</span>
+  <span class="badge">Last updated: October 3, 2026</span>
 </header>
 
 <main>
 
   <div class="highlight">
-    <p>🔒 Short version: Spin the Wheel stores all your data locally on your device. We use Firebase Analytics to understand how the app is used — no personal information is collected.</p>
+    <p>🔒 Your wheels and spin history stay on your device. Google services handle advertising and optional purchases. This policy explains what is stored, what those services process, and the choices available to you.</p>
   </div>
 
   <section>
     <h2>👤 Who We Are</h2>
-    <p>
-      Spin the Wheel is an Android application developed and maintained by an independent developer.
-      This Privacy Policy explains how our app handles your information.
-    </p>
-    <p>
-      Developer: <strong>Bonan01</strong><br />
-      Contact: <a href="mailto:privacy@spinthewheel.app">privacy@spinthewheel.app</a>
-    </p>
+    <p>Spin the Wheel is an Android decision-making app developed and maintained by <strong>Bonan01</strong>, an independent developer.</p>
+    <p>This policy applies to version <strong>1.0.1</strong> and subsequent versions with the practices described below. Advertising and purchase availability depend on the app version and distribution channel. Test builds use sample advertisements and do not accept real purchases.</p>
+    <p>For privacy questions, use our <a href="https://github.com/Bonan01/spin-the-wheel-privacy/issues" target="_blank" rel="noopener">GitHub Issues contact page</a>. You do not need an app account to use the wheel features.</p>
   </section>
 
   <section>
-    <h2>📦 Data We Collect</h2>
-    <p>We do <strong>not</strong> collect any personally identifiable information. Specifically, we never collect:</p>
+    <h2>📱 Information Stored on Your Device</h2>
     <ul>
-      <li>Your name, email address, or account information</li>
-      <li>Location data</li>
-      <li>Device identifiers or advertising IDs</li>
-      <li>The content of your wheels or spin results</li>
-      <li>Cookies or tracking technologies beyond what Firebase uses</li>
+      <li><span>Your wheels, option text, colors, probabilities, and elimination settings.</span></li>
+      <li><span>Your latest 50 spin results.</span></li>
+      <li><span>Preferences such as the theme, sound, vibration, and spin duration.</span></li>
+      <li><span>A locally verified purchase receipt, if you purchase the option to remove ads.</span></li>
     </ul>
+    <p>We do not upload wheel names, option text, or spin history to our own servers. The app does not automatically back up this information to the cloud. Wheel features work without an internet connection.</p>
   </section>
 
   <section>
-    <h2>📊 Analytics (Firebase)</h2>
-    <p>
-      We use <strong>Firebase Analytics</strong> (by Google) to understand how users interact with the app in aggregate.
-      This helps us improve the experience for everyone.
-    </p>
-    <p>We collect <em>anonymous</em> usage events such as:</p>
+    <h2>📢 Advertising and Privacy Choices</h2>
+    <p>The app includes <strong>Google AdMob</strong> banner advertising. When advertising is enabled, Google's Mobile Ads SDK processes data for ad delivery, measurement, diagnostics, and fraud prevention. Depending on your settings and the advertising features in use, this includes:</p>
     <ul>
-      <li>When a wheel is spun (number of sectors, spin duration)</li>
-      <li>When a result is shared</li>
-      <li>When a theme is changed</li>
-      <li>When a new wheel is created or edited</li>
-      <li>App session information (screen views, session duration)</li>
+      <li><span>Your IP address, which can indicate an approximate location.</span></li>
+      <li><span>Advertising, app-set, and other applicable device or account identifiers.</span></li>
+      <li><span>Interactions with the app and advertisements, and technical performance information.</span></li>
     </ul>
-    <p>
-      <strong>None of these events contain personal information</strong> — we only log counts and settings, never the text content of your wheels.
-      Firebase Analytics data is processed by Google and subject to
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
-      You can opt out of Firebase Analytics collection at any time in your device settings:
-      <em>Settings → Google → Ads → Opt out of Ads Personalization</em>.
-    </p>
+    <p>This data is transmitted to Google over encrypted connections. Google may process it in countries other than your own. We do not provide your wheel text or spin results to AdMob.</p>
+    <p>The Google Play version uses Google's consent tools to request advertising choices where required. When available, you can reopen them through <strong>Settings → Ad privacy choices</strong>. The choices offered depend on your region and the applicable requirements. Ads may be personalized, non-personalized, limited, or unavailable. The wheel features remain usable if no advertisement is loaded.</p>
+    <p>Android also provides advertising-identifier controls; the options depend on your device. Google's processing is explained in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps and sites</a>.</p>
   </section>
 
   <section>
-    <h2>🐛 Crash Reporting (Firebase Crashlytics)</h2>
-    <p>
-      We use <strong>Firebase Crashlytics</strong> to automatically detect and report app crashes.
-      Crash reports may include:
-    </p>
-    <ul>
-      <li>Device model, OS version, and app version</li>
-      <li>Stack trace of the crash (code location)</li>
-      <li>Time of crash</li>
-    </ul>
-    <p>
-      Crash reports do <strong>not</strong> include any content from your wheels or personal information.
-      This data is used exclusively for fixing bugs and improving stability.
-    </p>
+    <h2>🛒 Optional Purchases</h2>
+    <p>In the Google Play version, an optional one-time purchase removes advertisements. <strong>Google Play</strong> handles payment. We do not receive your payment-card details.</p>
+    <p>The app receives purchase information such as product and purchase identifiers, purchase status, and a signed receipt. It verifies and stores the receipt locally to remember that ads have been removed, including while offline. It checks purchase status with Google Play when connected.</p>
+    <p>You can restore a completed purchase using the Google Play account that made it. Google retains its own payment and purchase records under its policies. Purchase availability and restoration require a connection to Google Play.</p>
   </section>
 
   <section>
-    <h2>📱 Data Stored Locally</h2>
-    <p>The app stores the following data <strong>only on your device</strong>, never on any server:</p>
-    <ul>
-      <li>Your custom wheel configurations (names and colors of sectors)</li>
-      <li>Spin history (results of your previous spins)</li>
-      <li>App preferences (theme, sound settings, spin duration)</li>
-    </ul>
-    <p>
-      This data is stored using Android's standard local storage (Room database and DataStore)
-      and is removed when you uninstall the app. You can clear it manually at any time through
-      your device's <em>App Settings → Clear Data</em>.
-    </p>
+    <h2>↗️ Sharing, Network Access, and Permissions</h2>
+    <p>If you choose to share options or a result, the selected text is passed to Android's share menu. The app or recipient you select then handles that text under its own privacy practices.</p>
+    <p>The app uses the internet for advertising, consent messages, and Google Play purchase checks. Optional vibration provides feedback during use. It does not request access to your contacts, camera, microphone, or precise location.</p>
   </section>
 
   <section>
-    <h2>🌐 Internet &amp; Permissions</h2>
-    <p>Spin the Wheel uses the following Android permissions:</p>
-    <ul>
-      <li><strong>INTERNET</strong> — required by Firebase Analytics and Crashlytics to send anonymous usage and crash data.</li>
-      <li><strong>VIBRATE</strong> — for haptic feedback when the wheel stops. No data is transmitted.</li>
-    </ul>
+    <h2>🗑️ Retention and Deletion</h2>
+    <p>Your wheels and settings stay in the app's local storage until you remove them or clear the app's storage. History is limited to the latest 50 results and can be cleared in the app. You can delete individual wheels from your saved wheels.</p>
+    <p>Clearing the app's storage or uninstalling removes its local data, including any stored purchase receipt. Without a separate copy of your options, deleted wheels cannot be recovered by us. A completed purchase can be restored separately through Google Play.</p>
+    <p>Deleting the app does not delete advertising or purchase records held by Google. For those records, retention, deletion, and privacy controls are governed by Google's policies and account settings.</p>
+    <p>Questions you post on GitHub remain part of the repository's public issue history unless edited, deleted, or removed through GitHub's controls. You can request the removal of material you posted by contacting the maintainer through the same issue. GitHub may retain its own records as described in its privacy statement.</p>
   </section>
 
   <section>
-    <h2>👶 Children's Privacy</h2>
-    <p>
-      Spin the Wheel is suitable for all ages. We do not knowingly collect personal data
-      from children under 13 (or the applicable age in your jurisdiction).
-      Firebase Analytics is configured to not collect advertising identifiers.
-    </p>
-  </section>
-
-  <section>
-    <h2>🔄 Third-Party Services</h2>
-    <p>The app uses the following third-party services:</p>
-    <ul>
-      <li><strong>Firebase Analytics</strong> — anonymous usage analytics by Google</li>
-      <li><strong>Firebase Crashlytics</strong> — crash reporting by Google</li>
-    </ul>
-    <p>There are no advertising SDKs, social login services, or in-app purchases in the current version.</p>
+    <h2>🌐 This Website and Support Requests</h2>
+    <p>This policy page is hosted on <strong>GitHub Pages</strong>. The page does not include our own analytics scripts or advertising. GitHub handles visits to its hosting service under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>.</p>
+    <p>If you open an issue, the maintainer can see your GitHub username, public profile information, and the message or attachments you submit. We use that information to respond to your question and address the reported issue.</p>
+    <p><strong>GitHub Issues are public and require a GitHub account to post.</strong> Do not include payment details, purchase receipts, passwords, or other private information in an issue.</p>
   </section>
 
   <section>
     <h2>✏️ Changes to This Policy</h2>
-    <p>
-      If we update this Privacy Policy, the new version will be published at this URL
-      and the "Last updated" date at the top will be changed.
-      We will not retroactively reduce your privacy rights.
-    </p>
+    <p>We may update this policy when the app or its services change. The latest policy will remain available at this address, with an updated date. The app's Google Play listing and in-app privacy link will point to the current policy.</p>
   </section>
 
   <section>
     <h2>📬 Contact Us</h2>
-    <p>
-      If you have any questions or concerns about this Privacy Policy, please contact us at:<br />
-      <a href="mailto:privacy@spinthewheel.app">privacy@spinthewheel.app</a>
-    </p>
-    <p>
-      You can also open an issue on our
-      <a href="https://github.com/Bonan01/spin-the-wheel-privacy" target="_blank" rel="noopener">GitHub repository</a>.
-    </p>
+    <p>For privacy questions or support, <a href="https://github.com/Bonan01/spin-the-wheel-privacy/issues" target="_blank" rel="noopener">open an issue in the Spin the Wheel privacy repository</a>. The repository is maintained by <a href="https://github.com/Bonan01" target="_blank" rel="noopener">Bonan01</a>.</p>
+    <p>Please describe your question without posting sensitive information. We cannot retrieve wheels or history that exist only on your device.</p>
   </section>
 
 </main>
 
 <footer>
-  <p>© 2025 Spin the Wheel. All rights reserved.</p>
+  <p>© 2026 Spin the Wheel. All rights reserved.</p>
   <p style="margin-top:4px;">
     <a href="https://github.com/Bonan01" target="_blank" rel="noopener">github.com/Bonan01</a>
   </p>
